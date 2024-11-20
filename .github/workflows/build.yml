@@ -7,9 +7,3 @@ jobs:
       - name: Verificar versión de Cassandra
         run: |
           cqlsh --version
-      - name: Ejecutar comandos en Cassandra
-        run: |
-          echo "Creando keyspace de ejemplo..."
-          cqlsh -e "CREATE KEYSPACE IF NOT EXISTS example_keyspace WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};"
-      - name: Checkout del código
-        uses: actions/checkout@v3
