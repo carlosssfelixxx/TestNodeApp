@@ -1,9 +1,8 @@
 on: push
 jobs:
-  build-cassandra:
+  build-node:
     runs-on: ubuntu-latest
-    container: cassandra:4
-    steps:
-      - name: Verificar versión de Cassandra
-        run: |
-          cqlsh --version
+    container: node:16
+    steps: 
+      - uses: actions/checkout@v3
+      - run: node app.js

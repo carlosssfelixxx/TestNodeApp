@@ -1,7 +1,4 @@
-const moment = require('moment');
-let i = 5;
-let j = 10;
-let fecha = moment().format("LL");
-console.log("Iniciando...");
-console.log("La suma total es ", i + j);
-console.log("Y la fecha es ", fecha);
+const ver = process.versions.node;
+console.log("Carlos Eduardo Felix Santamaria");
+console.log(ver);
+console.log("746335");
